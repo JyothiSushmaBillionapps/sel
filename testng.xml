@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+<suite name="Suite">
+
+<listeners>
+    <listener class-name="com.bis.extent.ExtentReportManager" />
+</listeners>
+
+  <test thread-count="2" name="Test" parallel="methods">
+
+    <classes>
+      <class name="com.bis.tests.HomePage"/>
+      <class name="com.bis.tests.LoginpageTest"/>
+       <class name="com.bis.tests.SearchTest"/>
+       <class name="com.bis.tests.DemoTest"/>
+         <class name="com.bis.tests.SupportTest"/>
+          <class name="com.bis.tests.HamburgerTest"/>
+         <class name="com.bis.tests.SalesInquiry"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
